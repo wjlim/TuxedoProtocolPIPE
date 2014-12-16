@@ -2,7 +2,7 @@ Tuxedo.ScriptCommander
 =====================
 
 **Finding Differentially Expressed Genes with Tuxedo protocol**
-You can make Tuxedo protocol scripts easily use this
+You can make Tuxedo protocol scripts easily. Use this~:D
 **Requirement**
 --------------
 - python
