@@ -43,9 +43,26 @@ Options:
                         option    [-i condition1,prefix1,fastq_file1(s) -i
                         condition2,prefix2,fastq_file2(s) ...
 ```
+- example
+```
+Tuxedo.ScriptCommander.py\
+ -f reference/Arabidopsis_thaliana.TAIR10.23.dna.genome.fa\
+ -m reference/Arabidopsis_thaliana.TAIR10.23.cds.all.fa\
+ -a reference/Arabidopsis_thaliana.TAIR10.23.gtf\
+ -p 4\
+ -o TEST\
+ -i CONTROL,COL_1,raw_data/COL_1.1.fastq.gz,raw_data/COL_1.2.fastq.gz\
+ -i CONTROL,COL_2,raw_data/COL_2.1.fastq.gz,raw_data/COL_2.2.fastq.gz\
+ -i CONTROL,COL_3,raw_data/COL_3.1.fastq.gz,raw_data/COL_3.2.fastq.gz\
+ -i KO,BP12_1,raw_data/BP12_1.1.fastq.gz,raw_data/BP12_1.2.fastq.gz\
+ -i KO,BP12_2,raw_data/BP12_2.1.fastq.gz,raw_data/BP12_2.2.fastq.gz\
+ -i KO,BP12_3,raw_data/BP12_3.1.fastq.gz,raw_data/BP12_3.2.fastq.gz\
+ -r
+```
 Information
 --------------
     Reference fasta file, Transcriptome sequence file and annotation file are required.
+    *bowtie2-build Reference.fa Reference* and *bwa index Transcriptome.fa* excute before running this scripts (*ln -s Reference.fa Reference* first)
     Please define OUTFIX as project name.
     If you want to run whole scripts, then add -r option.
     This script parsing with multiple -i options.
