@@ -11,12 +11,14 @@ You can make Tuxedo protocol scripts easily use this
 - **samtools** (please check release date)
 - **BWA** is required for calculating fragment size(Calculating tophat parameters)
 - **gawk**
---------------
+
 **Install**
+--------------
 git clone https://github.com/wjlim/TuxedoProtocolPIPE.git
 export PATH=$PWD/TuxedoProtocolPIPE:$PATH (bash shell)
---------------
+
 **Usage: Tuxedo.ScriptCommander.py    -f refence_fasta -m mRNA_fasta -a ANNOTation(gff,gtf)    -p total_available_CPUs -i input_info1(comma sep) -i input_info2(comma sep) ...**
+--------------
 
 Options:
   -h, --help            show this help message and exit
@@ -36,7 +38,7 @@ Options:
                         Define input files and conditions with multiple -i
                         option    [-i condition1,prefix1,fastq_file1(s) -i
                         condition2,prefix2,fastq_file2(s) ...
-
+Information
 --------------
     Reference fasta file, Transcriptome sequence file and annotation file are required
     Please define OUTFIX as project name.
