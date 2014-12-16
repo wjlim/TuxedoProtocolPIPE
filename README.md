@@ -1,4 +1,4 @@
-Human_RNA.Tuxedo.repo
+Tuxedo.ScriptCommander
 =====================
 
 **Finding Differentially Expressed Genes with Tuxedo protocol**
