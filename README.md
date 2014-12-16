@@ -22,7 +22,7 @@ export PATH=$PWD/TuxedoProtocolPIPE:$PATH (bash shell)
 **Usage**
 --------------
 ```
-**Usage: Tuxedo.ScriptCommander.py    -f refence_fasta -m mRNA_fasta -a ANNOTation(gff,gtf)    -p total_available_CPUs -i input_info1(comma sep) -i input_info2(comma sep) ...**
+**Usage: Tuxedo.ScriptCommander.py -f refence_fasta -m mRNA_fasta -a annotation(gff,gtf) -p total_available_CPUs -i input_info1(comma sep) -i input_info2(comma sep) ...**
 Options:
   -h, --help            show this help message and exit
   -f REFERENCE, --reference=REFERENCE
