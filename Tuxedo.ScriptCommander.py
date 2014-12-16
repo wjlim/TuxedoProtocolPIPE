@@ -18,7 +18,7 @@ def myMkdir(PATH):
         os.mkdir(PATH,0751)
 
 def myTime():
-    return time.strftime('%Y-%m-%d\t%p %H:%M:%S')
+    return time.strftime('%Y-%m-%d\t%p %l:%M:%S')
 
 def myHumanReadableSort(LIST):
     conv = lambda x:int(x) if x.isdigit() else x
@@ -160,10 +160,7 @@ cuffdiff\
     BWAscripts = []
     TOPHATscripts = []
     CUFFLINKSscripts = []
-    CUFFMERGEscripts = []
-    CUFFDIFFscripts = []
     CUFFLINKSoutputs = []
-    PREFIX_list = []
 
 # Local arguments formatting with templates
     for CONDITION in CONDITIONS:
@@ -180,7 +177,6 @@ cuffdiff\
             CUFFLINKSscripts.append(cufflinksScriptNameFormatted)
 
             CUFFLINKSoutputs.append('%s/cufflinks/%s.cufflinks/transcripts.gtf'%(OUTPATH,PREFIX))
-            PREFIX_list.append(PREFIX)
 
     CUFFLINKS_OUTFILEs_list = '%s/logs/cufflinks_out.ls' % OUTPATH
     ofile = open(CUFFLINKS_OUTFILEs_list,'w')

@@ -5,6 +5,7 @@ Tuxedo.ScriptCommander
 You can make Tuxedo protocol scripts easily use this
 **Requirement**
 --------------
+- python
 - **tophat**
 - **bowtie**
 - **cufflinks** packages 
@@ -50,3 +51,4 @@ Information
     This script parsing with multiple -i options.
     Inputs arguments are delemited with comma.
     If you have replicates data, then put a same condition name.
+    You can change detail options in "script" by edit template variables
