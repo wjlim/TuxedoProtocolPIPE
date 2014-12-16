@@ -14,8 +14,10 @@ You can make Tuxedo protocol scripts easily use this
 
 **Install**
 --------------
+```
 git clone https://github.com/wjlim/TuxedoProtocolPIPE.git
 export PATH=$PWD/TuxedoProtocolPIPE:$PATH (bash shell)
+```
 
 **Usage**
 --------------
@@ -42,7 +44,7 @@ Options:
 ```
 Information
 --------------
-    Reference fasta file, Transcriptome sequence file and annotation file are required
+    Reference fasta file, Transcriptome sequence file and annotation file are required.
     Please define OUTFIX as project name.
     If you want to run whole scripts, then add -r option.
     This script parsing with multiple -i options.
