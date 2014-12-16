@@ -211,7 +211,7 @@ def myRun(BWAscripts, TOPHATscripts, CUFFLINKSscripts, CUFFMERGEscripts, CUFFDIF
 if __name__=='__main__':
 
     parser = OptionParser("Usage: %prog\
-    -f refence_fasta -m mRNA_fasta -a ANNOTation(gff,gtf)\
+    -f refence_fasta -m mRNA_fasta -a Annotation(gff,gtf)\
     -p total_available_CPUs -i input_info1(comma sep) -i input_info2(comma sep) ...")
     parser.add_option("-f","--reference",dest="reference",help="reference fasta file")
     parser.add_option("-m","--mRNA",dest="transcriptome",help="mRNA sequences fasta file")
